@@ -6,7 +6,6 @@
         display: block;
     }
     .nav.open .nav-list {
-
         position: fixed;
         top: 0;
         bottom: 0;
@@ -19,6 +18,8 @@
         row-gap: 40px;
         font-size: 34px;
         font-weight: 600;
+        z-index: 1;
+        text-align: center;
     }
     .nav-link {
         color: #606060;
@@ -27,13 +28,14 @@
         color: black;
     }
     .nav-button {
-        position: absolute;
-        z-index: 2;
+        position: fixed;
+        z-index: 9;
         top: 46px;
         right: 30px;
     }
     .nav.open {
         position: fixed;
+        z-index: 3;
     }
     .header-row {
         flex-direction: column;
